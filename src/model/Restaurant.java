@@ -9,5 +9,7 @@ public class Restaurant {//implémente une interface IEtablissement
 	
 	public class Table {
 		private int nbChaises;
+		private CalendrierAnnuel calendrier;
+		private EntiteReservable entiteReservable;
 	}
 }
