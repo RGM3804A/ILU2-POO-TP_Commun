@@ -4,7 +4,7 @@ public abstract class Formulaire<T extends Reservation> {
 	protected T reservation;
 	private int IdentificationEntite;
 	
-	protected<T extends Reservation> Formulaire(T reservation) {
+	protected Formulaire(T reservation) {
 		this.reservation = reservation;
 	}
 	
@@ -15,6 +15,10 @@ public abstract class Formulaire<T extends Reservation> {
 	public int getMois() {
 		return reservation.getMois();
 	}
+	
+	/*public<T extends ReservationRestaurant> int getNumService(T reservation) {
+		return reservation.getNumService();
+	}*/
 	
 	public void setIdentificationEntite(int identifiant) {
 		this.IdentificationEntite = identifiant;
